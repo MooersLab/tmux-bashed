@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=matplotlib-voice-in&message=0.3&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=tmux-bashed&message=0.3&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
