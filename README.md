@@ -2,16 +2,26 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# Automated setup of tmux sessions, windows, and panes via a bash function.
+# Automated setup of tmux sessions, windows, and panes
 
 ## The problem
 
-To save the time lost manually rebuilding the same tmux sessions after each system crash on my dying computer.
+To save the time lost manually building the same tmux sessions after each overnight system crash on my dying computer.
 
 ## The solution
 
-A bash function called `twf`. 
-Enter `twf` and stand back for several minutes.
+A bash function called `twf`, **t**umx **w**ork **f**low. 
+Enter `twf` and go get some coffee while your computer prepares your workflow for the day.
+This approach could save 50-200 keystrokes per day.
+
+
+## Usage
+
+```bash
+chmod +x tmux.sh
+source ./tmux.sh # add to your .zshrc file eventually.
+twf
+```
 
 ## Requirements
 
