@@ -41,11 +41,74 @@ Five iterm2 tabs were created and populated with five tmux sessions.
 The current window is the highlighted tmux tab.
 There is a ten-window limit per iterm2 tab.
 
+
+## Tab titles
+The default tab title in iterm2 will be `tmux`. If you have ten iterm2 tabs open, this row of ten `tmux` is not helpful.
+After pasting the following code in your `.zshrc` file, you can change the title of an iterm2 tab by entering `tt`. 
+I modified the bash function by adding a tt command to each call of applescript to create a new tab.
+
+```zsh
+DISABLE_AUTO_TITLE="true"
+tt () {
+    echo -e "\033];$@\007"
+}
+```
+
+## Coloring the iterm2 tabs
+
+Coloring the iterm2 tab can also enhance your identification of the tab of interest.
+The following code assigns a random color for the tab each time a new tab is opened.
+Add this code to your zshrc file.
+
+```zsh
+# randomly color new tabs.
+PRELINE="\r\033[A"
+
+function random {
+    echo -e "\033]6;1;bg;red;brightness;$((1 + $RANDOM % 255))\a"$PRELINE
+    echo -e "\033]6;1;bg;green;brightness;$((1 + $RANDOM % 255))\a"$PRELINE
+    echo -e "\033]6;1;bg;blue;brightness;$((1 + $RANDOM % 255))\a"$PRELINE
+}
+
+function color {
+    case $1 in
+    green)
+    echo -e "\033]6;1;bg;red;brightness;57\a"$PRELINE
+    echo -e "\033]6;1;bg;green;brightness;197\a"$PRELINE
+    echo -e "\033]6;1;bg;blue;brightness;77\a"$PRELINE
+    ;;
+    red)
+    echo -e "\033]6;1;bg;red;brightness;270\a"$PRELINE
+    echo -e "\033]6;1;bg;green;brightness;60\a"$PRELINE
+    echo -e "\033]6;1;bg;blue;brightness;83\a"$PRELINE
+    ;;
+    orange)
+    echo -e "\033]6;1;bg;red;brightness;227\a"$PRELINE
+    echo -e "\033]6;1;bg;green;brightness;143\a"$PRELINE
+    echo -e "\033]6;1;bg;blue;brightness;10\a"$PRELINE
+    ;;
+    *)
+    random
+    esac
+}
+
+color
+```
+
+With `tt` and random coloring enabled, my iterm terminal appears in the figure below.
+The tabs labeled zsh are not tmux sessions, or they were intended tmux session,
+but a bug in the script failed to launch a tmux session in the iterm2 tab.
+
+<img width="1363" alt="Screenshot 2024-11-30 at 8 12 46 AM" src="https://github.com/user-attachments/assets/569a5ba2-bc12-4d54-80bb-867f6b3fe76e">
+
+
 ## Update history
 
-|Version      | Changes                                                                                                                                                                         | Date                 |
-|:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
-| Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                                                                | 2024 November 19  |
+|Version      | Changes                                                                                                                                   | Date                 |
+|:------------|:------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
+| Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                               | 2024 November 19     |
+| Version 0.2 |   Added code for adding titles to tabs and randomly coloring them.                                                                        | 2024 November 30     |
+
 
 ## Sources of funding
 
