@@ -1,4 +1,4 @@
-function twf {
+function wf {
     echo "Start workflows in tmux."
 
     alias openc="open -a Google\\ Chrome.app"
