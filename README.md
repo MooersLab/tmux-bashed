@@ -27,8 +27,15 @@ source ./tmux.sh # add to your .zshrc file eventually.
 wf
 ```
 
+## Precaution
+
+This supplied function serves as a template.
+It will not work entirely on your system because it calls aliases or functions defined elsewhere.
+
+
 ## Requirements
 
+- Willingness to customize for your workflow.
 - Mac OS but adaptable to other platforms.
 - iterm2
 - `advanced-tmux.config` from the [MooersLab/tmux-rocks](https://github.com/MooersLab/tmux-rocks) repo.
