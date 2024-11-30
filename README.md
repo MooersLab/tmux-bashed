@@ -57,7 +57,7 @@ The color scheme is imposed by the selected profile in iterm2.
 ## Tab titles
 The default tab title in iterm2 will be `tmux`. If you have ten iterm2 tabs open, this row of ten `tmux` is not helpful.
 After pasting the following code in your `.zshrc` file, you can change the title of an iterm2 tab by entering `tt`. 
-I modified the bash function by adding a tt command to each call of applescript to create a new tab.
+I modified the bash function by adding a `tt` command to each call of applescript to create a new tab.
 
 ```zsh
 DISABLE_AUTO_TITLE="true"
@@ -125,7 +125,7 @@ The
 |Version      | Changes                                                                                                                                   | Date                 |
 |:------------|:------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
 | Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                               | 2024 November 19     |
-| Version 0.2 |   Added code for adding titles to iterm2 tabs and randomly coloring the iterm2 tabs.  Added updates tmux session.                         | 2024 November 30     |
+| Version 0.2 |   Added code for adding titles to iterm2 tabs and randomly coloring the iterm2 tabs.  Added updates tmux session. Changed function namne from twf to wf. | 2024 November 30     |
 
 
 ## Sources of funding
