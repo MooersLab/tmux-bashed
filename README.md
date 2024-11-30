@@ -104,7 +104,7 @@ With `tt` and random coloring enabled, my iterm2 terminal has been enhanced (see
 The opened tab is indicated by the white line under the tab.
 The tabs labeled `zsh` are not tmux sessions or were intended tmux sessions,
 but a bug in the script failed to launch a tmux session in the iterm2 tab.
-The Updates tab had the following command passed, 'brew update && brew upgrade && msu'.
+The `updates` tab had the following command passed, 'brew update && brew upgrade && msu'.
 This runs brew update and then an alias to a series of macports commands to update macports and clean up.
 
 <img width="1363" alt="Screenshot 2024-11-30 at 8 12 46 AM" src="https://github.com/user-attachments/assets/569a5ba2-bc12-4d54-80bb-867f6b3fe76e">
