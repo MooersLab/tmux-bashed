@@ -1,12 +1,16 @@
-![Version](https://img.shields.io/static/v1?label=tmux-bashed&message=0.1&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=tmux-bashed&message=0.2&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# Automated setup of tmux sessions, windows, and panes
+# Automated opening of iterm2 tabs and the setup of tmux sessions, windows, and panes
 
 ## The problem
 
-To save the time lost to building the same tmux sessions every morning after each overnight system crash on my dying computer.
+Save the time lost to rebuilding the same tmux sessions.
+The bash function in the script above takes about two minutes to run.
+The manual building of my setup may take ten to 20 minutes.
+The time savings are significant.
+May I do something significant with my freed time!
 
 ## The solution
 
@@ -96,6 +100,7 @@ color
 ```
 
 With `tt` and random coloring enabled, my iterm2 terminal has been enhanced (see image  below).
+The opened tab is indicated by the white line under the tab.
 The tabs labeled `zsh` are not tmux sessions or were intended tmux sessions,
 but a bug in the script failed to launch a tmux session in the iterm2 tab.
 
@@ -107,7 +112,7 @@ but a bug in the script failed to launch a tmux session in the iterm2 tab.
 |Version      | Changes                                                                                                                                   | Date                 |
 |:------------|:------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
 | Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                               | 2024 November 19     |
-| Version 0.2 |   Added code for adding titles to tabs and randomly coloring them.                                                                        | 2024 November 30     |
+| Version 0.2 |   Added code for adding titles to iterm2 tabs and randomly coloring the iterm2 tabs.                                                      | 2024 November 30     |
 
 
 ## Sources of funding
