@@ -44,6 +44,7 @@ twf
 Five iterm2 tabs were created and populated with five tmux sessions.
 The current window is the highlighted tmux tab.
 There is a ten-window limit per iterm2 tab.
+The color scheme is imposed by the selected profile in iterm2.
 
 
 ## Tab titles
