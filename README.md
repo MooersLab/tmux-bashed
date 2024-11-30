@@ -14,8 +14,8 @@ May I do something significant with my freed time!
 
 ## The solution
 
-A bash function called `twf`, **t**umx **w**ork **f**low. 
-Enter `twf` and go get some coffee while your computer prepares your workflow for the day.
+A bash function called `wf`, **w**ork **f**low. 
+Enter `wf` and go get some coffee while your computer prepares your workflow for the day.
 This approach could save 50-200 keystrokes per day.
 
 
@@ -24,7 +24,7 @@ This approach could save 50-200 keystrokes per day.
 ```bash
 chmod +x tmux.sh
 source ./tmux.sh # add to your .zshrc file eventually.
-twf
+wf
 ```
 
 ## Requirements
